@@ -10,7 +10,7 @@ export default function Header(props) {
       <div className="text-sm font-semibold flex  gap-2 items-center">
         <p className={props.mode ? "text-black" : "text-gray-400"}>Light</p>
         <div
-          className={`pr-4 pl-0 shadow-md rounded-lg h-fit ${
+          className={` shadow-md rounded-lg h-fit ${
             props.mode ? "bg-black pr-4 pl-0" : "bg-white pr-0 pl-4"
           }`}
           onClick={props.handle}
@@ -19,7 +19,7 @@ export default function Header(props) {
             className={`w-4 h-4 rounded-full border   border-black ${
               props.mode
                 ? "translate-x-0 duration-100 bg-white"
-                : " bg-black -translate-x-0.5 duration-50"
+                : " bg-black translate-x-0.5 duration-50"
             }`}
           ></div>
         </div>
