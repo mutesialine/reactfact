@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
-function App() {
+export default function App() {
+  const [Mode, setMode] = useState(true);
+  function handleTheMode() {
+    setMode((prev) => !prev);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className={`mt-36 max-w-[550px] mx-auto shadow-lg ${
+        Mode ? "text-black" : "bg-black text-white"
+      }`}
+    >
+      <Header handle={handleTheMode} mode={Mode}  />
+      <Hero/>
     </div>
   );
 }
-
-export default App;
