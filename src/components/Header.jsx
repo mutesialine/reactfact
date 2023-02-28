@@ -4,7 +4,7 @@ export default function Header(props) {
   return (
     <div className="text-2xl py-4 px-8 flex justify-between border-b-2 border-gray-500">
       <div className="flex gap-x-2">
-        <img src="/images/reactjs-icon 1.jpg" className="w-8 object-fit" />
+        <img src="/images/reactjs-icon 1.jpg" className="w-8 object-fit"  alt="react icon"/>
         <p className="text-[#00ABCA] font-bold">ReactFacts</p>
       </div>
       <div className="text-sm font-semibold flex  gap-2 items-center">
