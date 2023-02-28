@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 export default function Header(props) {
   return (
     <div className="text-2xl py-4 px-8 flex justify-between border-b-2 border-gray-500">
